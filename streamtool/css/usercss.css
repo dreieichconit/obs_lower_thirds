@@ -1,0 +1,7 @@
+tr:hover {
+	background-color: lightgray;
+}
+td a {
+	display: block;
+	color: black;
+}

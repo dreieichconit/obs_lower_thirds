@@ -1,0 +1,514 @@
+:root {
+	--spacing: 2rem;
+	--spacing2: 4rem;
+	--spacing3: 2rem;
+	--spacing4: 1rem;
+	--spacing5: -1rem;
+	--spacing6: 0.5rem;
+	--background: #ddd;
+	--backgroundnow: rgb(188, 219, 194);
+	--boxborder: 2px solid black;
+	--mainFont: "Roboto";
+	--clockFont: "Coda";
+	--popBG: #aaa;
+	--button: #a55;
+}
+
+button {
+	border: none;
+}
+
+html {
+	background-color: var(--background);
+}
+
+.fill {
+	background-color: var(--background);
+}
+
+.wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: row;
+}
+
+.left {
+	width: 50% !important;
+	height: 100% !important;
+	display: flex;
+	flex-direction: column;
+}
+
+.splitwrapper {
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+.lefttop {
+	height: 50%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+.leftbot {
+	height: 80%;
+	width: 100%;
+}
+
+.right {
+	width: 50% !important;
+	height: 100% !important;
+	display: flex;
+	flex-direction: column;
+}
+
+.righttop {
+	width: 100% !important;
+	height: 37vh !important;
+	background-color: var(--background);
+}
+
+.rightmid {
+	width: 100%;
+	height: 37vh !important;
+	background-color: var(--background);
+}
+
+.rightbot {
+	width: 100%;
+	height: 30vh !important;
+}
+
+.programtitle {
+	font-size: 25pt;
+	font-weight: 1000;
+	padding-bottom: var(--spacing4);
+}
+
+.programdata {
+	font-size: 20pt;
+	padding-left: 1rem;
+}
+
+.programbox {
+	width: 50%;
+	height: 100% !important;
+	display: flex;
+	flex-direction: column;
+	font-family: roboto;
+	border: var(--boxborder);
+}
+
+.bindenbox {
+	height: 100%;
+	background-color: var(--background);
+	padding-left: var(--spacing);
+}
+
+.subtext {
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.subbox {
+	padding-top: 1rem;
+	padding-left: var(--spacing4);
+	background-color: var(--background);
+	padding-bottom: 2rem;
+	height: 100% !important;
+}
+
+.subbox2 {
+	padding-top: 1rem;
+	padding-left: var(--spacing4);
+	background-color: var(--background);
+	padding-bottom: 8rem;
+	height: 70% !important;
+}
+
+.subbox3 {
+	padding-top: 1rem;
+	padding-left: var(--spacing4);
+	background-color: var(--background);
+	padding-bottom: 8rem;
+	height: 65% !important;
+}
+
+.topwrapper {
+	height: 77% !important;
+}
+
+.bottomwrapper {
+	height: 20% !important;
+	width: 100% !important;
+	display: flex;
+	flex-direction: row;
+}
+
+.sendbutton {
+	width: 50%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-left: 7rem;
+}
+
+.formleft {
+	position: relative;
+	width: 70%;
+	height: 63%;
+}
+
+.formright {
+	position: relative;
+	width: 30%;
+	height: 63%;
+}
+
+.formwrapper {
+	width: 100%;
+}
+
+.sendcomment {
+	width: 100%;
+	height: 100%;
+	border-radius: 1rem;
+	background-color: var(--popBG);
+	font-family: Roboto;
+	font-size: 20;
+	font-weight: 1000;
+}
+
+.subform {
+	padding-top: 1rem;
+	padding-left: var(--spacing4);
+	background-color: var(--background);
+	padding-bottom: 8rem;
+	height: 50% !important;
+}
+
+.half {
+	height: 100% !important;
+	width: 50% !important;
+}
+
+.small {
+	height: 10% !important;
+	margin-bottom: var(--spacing1);
+}
+
+.max {
+	flex: auto;
+	height: 90% !important;
+}
+
+.timerbox {
+	width: 100%;
+	height: 33.33333333%;
+	display: flex;
+	flex-direction: column;
+}
+
+.next {
+	background-color: rgba(255, 0, 0, 0.05);
+}
+
+.current {
+	background-color: rgba(0, 255, 0, 0.05);
+}
+
+.commitbox {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--background);
+}
+
+.commit {
+	height: 90%;
+	width: 95%;
+	background-color: var(--button);
+	font-family: Roboto;
+	font-size: 70pt;
+	border-radius: 10pt;
+	border: 1px solid black;
+}
+
+.timer {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	background-color: var(--background);
+}
+
+.time {
+	font-family: Coda;
+	font-size: 70pt;
+}
+
+.programtop {
+	height: 25% !important;
+	width: 100% !important;
+}
+
+.programbottom {
+	height: 75% !important;
+	width: 100% !important;
+}
+
+.questionbox {
+	width: 60vw;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	background-color: var(--background);
+}
+
+.smalltitle {
+	font-size: 15pt;
+	font-weight: 1000;
+	font-family: var(--mainFont);
+}
+
+.smallertitle {
+	font-size: 16pt;
+	font-weight: 1000;
+	font-family: var(--mainFont);
+	padding-left: var(--spacing);
+	padding-bottom: var(--spacing4);
+	margin-top: var(--spacing5);
+}
+
+.text {
+	border-radius: 1rem;
+	margin-left: var(--spacing);
+	margin-bottom: var(--spacing);
+	margin-right: var(--spacing);
+	background-color: var(--popBG);
+	padding-right: var(--spacing);
+	padding-bottom: var(--spacing);
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.textform {
+	border-radius: 1rem;
+	margin-left: var(--spacing);
+	margin-right: var(--spacing);
+	background-color: var(--popBG);
+	padding-right: var(--spacing);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: Roboto;
+	height: 100%;
+	width: 100%;
+}
+
+.positioner {
+	width: 60%;
+	height: 100% !important;
+}
+
+.textinput {
+	border: none;
+	background: none;
+	margin-left: 1rem;
+	width: 100% !important;
+	height: 100% !important;
+	font-family: Roboto;
+}
+
+.textelement {
+	background-color: var(--background);
+	border-radius: 1rem;
+	animation-duration: 1s;
+	margin-bottom: var(--spacing4);
+	margin-right: var(--spacing4);
+	height: fit-content;
+	position: relative;
+}
+
+.nowelement {
+	background-color: var(--backgroundnow);
+	border-radius: 1rem;
+	overflow: hidden;
+	animation-duration: 1s;
+	margin-bottom: var(--spacing4);
+	height: fit-content;
+	position: relative;
+	margin-left: var(--spacing);
+	margin-right: var(--spacing2);
+}
+
+.texttitle {
+	padding-top: var(--spacing4);
+	padding-left: var(--spacing3);
+	padding-right: var(--spacing5);
+	font-family: var(--mainFont);
+	font-size: 23;
+	font-weight: 1000;
+	color: #555;
+}
+
+.texttext {
+	padding-top: var(--spacing4);
+	padding-left: var(--spacing3);
+	padding-right: var(--spacing3);
+	font-family: var(--mainFont);
+	font-size: 19;
+}
+
+.notesbox {
+	width: 50%;
+	height: 100% !important;
+	border: var(--boxborder);
+	display: flex;
+	flex-direction: column;
+}
+
+.space {
+	border-bottom: 1px solid black;
+}
+
+.split {
+	border-right: 1px solid #777;
+}
+
+.split2 {
+	border-right: 1px solid #777;
+}
+.dropshadow {
+	filter: drop-shadow(0 6px 3px rgba(0, 0, 0, 0.3));
+}
+
+.timeokay {
+	color: darkgreen;
+}
+
+.timeover {
+	color: darkred;
+}
+
+.debug {
+	border: 1px dashed red;
+}
+
+.hidden {
+	opacity: 0;
+}
+
+.tablewrapper {
+	width: 100% !important;
+	height: 100% !important;
+}
+
+.tablepadding {
+	padding-top: var(--spacing);
+}
+
+.max2 {
+	height: 100%;
+}
+
+.binde {
+	padding: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	font-family: Roboto;
+	overflow: auto;
+}
+
+.frage {
+	padding: 1rem;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: flex-start;
+	font-family: Roboto;
+	overflow: hidden;
+}
+
+.icon {
+	padding-right: 0.5rem;
+}
+
+.bbico {
+	height: 2rem;
+	width: 2rem;
+	object-fit: contain;
+}
+
+.bindetitle {
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+}
+
+.bindetext {
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+}
+
+.scroll {
+	overflow: auto;
+}
+
+.half2 {
+	width: 48%;
+}
+
+.fixed {
+	position: absolute;
+	width: 35vw;
+	height: 25vh;
+}
+
+.wrap {
+	flex-wrap: wrap !important;
+	flex-direction: row !important;
+	overflow: hidden !important;
+	flex: 1;
+}
+
+.full {
+	height: auto !important;
+}
+
+.question {
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+}
+
+.questionstatus {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.nooverflow {
+	overflow: hidden;
+}
+
+.commenttext {
+	font-family: roboto;
+	width: 100%;
+	height: 100%;
+}

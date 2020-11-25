@@ -1,0 +1,118 @@
+# To stop a message from appearing, set the value to 'none'
+# Some names cannot be disabled, such as weather names, because the plugin cannot run without them
+
+weathers:
+    name:
+        beautiful: "&aSchön"
+        breezy: "&7Luftig"
+        chilly: "&9Kühl"
+        rainy: "&9Regnerisch"
+        scorching: "&eVerbrennend"
+        hot: "&eHeiß"
+        warm: "&eWarm"
+        cold: "&9Kalt"
+        stormy: "&cStürmisch"
+        freezing: "&9Eiskalt"
+        snowy: "&7Schnee"
+        night: "&7Ruhig"
+    on-trigger:
+        beautiful: "&aDie Sonne scheint, das Gras ist grün und das Wetter ist %weather%"
+        breezy: "&7Eine kühle Brise berührt deine Haut und es wird %weather%"
+        chilly: "&3Du zitterst während der Frost um dich glitzert, es wird %weather%"
+        rainy: "&3Der Regen trommelt auf die Dächer und durchnässt den Boden, es ist %weather%"
+        scorching: "&eDie Sonne verbrennt deine Haut und der Boden ist viel zu heiß zum Berühren, es ist %weather%"
+        hot: "&eHeute wird es sehr %weather% "
+        warm: "&eEine beruhigende Wärme umschließt dich, es ist ein %weather% &eTag"
+        cold: "&3Das Wetter ist heute so %weather% "
+        stormy: "&cDie Götter sind wütend, ein Sturm zieht herauf... Mach dich bereit!"
+        freezing: "&3Die Teiche frieren zu, denn es ist %weather%"
+        snowy: "&7Eine weiße %weather%-Decke überzieht das Land"
+        night: "&7Die Welt ruht mit der Sonne, alles wird friedlich. Bis die Monster dich fressen."
+seasons:
+    name:
+        spring: "&eFrühling"
+        summer: "&6Sommer"
+        autumn: "&2Herbst"
+        winter: "&9Winter"
+    on-trigger:
+        spring:
+            Die Sonne geht auf, es duftet nach frischen Blumen, es liegt %season% in der Luft.
+            Wortwörtlich!
+        summer:
+            Heute fühlt es sich wärmer an als sonst, vielleicht sogar zu warm.
+            Der %season% ist da.
+        autumn: Eine kühle Brise weht, die Blätter flüstern während sie von den Bäumen fallen, es ist %season%!
+        winter: Der Schnee beginnt zu fallen, die Welt wird still, es wird %season%
+effects:
+    on-trigger:
+        devastation:
+            "&cDein Herz schlägt schnell, deine Beine zittern. Du stellst fest, dass du
+            keine Lebensenergie zurückerhältst, bis die Verwüstung endet."
+        feels-good: "&aDie Brise fühlt sich so gut auf der Haut an, dass eine Rüstung den Effekt nur ruinieren würde ..."
+        fluffy-coat: "&aDeine Rüstung gibt Dir eine beruhigende Wärme und macht dich widerstandsfähig gegen die harte Kälte!"
+        frostbite: "&cDie Welt friert und du auch, wenn du keine Rüstung anziehst!"
+        hold-onto-your-hat: "&7Pass auf deinen Hut auf, es wird stürmisch"
+        hot-sand: "&eIn dieser Hitze auf Sand zu laufen muss schmerzhaft sein."
+        icy: "&9Ein Schauer läuft dir über den Rücken, während Wasser zu Eis wird!"
+        primitive-heating: "&9Eine Wärmequelle wäre großartig, um sie in dieser Kälte herumzutragen!"
+        revitalized: "&aDieses Wetter ist so belebend!"
+        soldering-iron: "&eDas nahegelegene Eisen beginnt zu brutzeln, legen es lieber erst einmal hin ..."
+        strong-current: "&9Das Wasser fließt mit einer starken Strömung, es wird schwer zu durchwaten sein!"
+        sweating: "&eDies ist definitiv NICHT das Wetter für dicke Kleidung ..."
+        the-shivers: "&cDas Wasser ist schon fast Eis und fühlt sich gefährlich kalt an"
+        wet-mud: "&7Der Schmutz bedeckt deine Stiefel, es wird schwer durchs Gelände zu kommen"
+        warming-stew: "&7Dein Magen fängt an zu knurren und du sehnst dich nach herzhafter Suppe ..."
+        wind-in-your-boots: "&7Der Wind weht heute zu deinen Gunsten."
+    on-give:
+        feels-good: "&aDie Sonne auf deiner nackten Haut fühlt sich gut an."
+        fluffy-coat: "&aDie Rüstung gibt dir eine wohlige Wärme und macht dich Widerstandsfähiger in dieser rauhen Welt."
+        hold-onto-your-hat: "&eDein Hut ist einfach weggeflogen, oh je!"
+        primitive-heating: "&aEin heißer Gegenstand in deinem Inventar wärmt dir das Herz und mach dich Widerstandsfähiger gegen die kalte, rauhe Welt"
+        revitalized:
+            "&aDie Sonne von dieser Welt ist so &eRevitalisierend&a, sie regenriert dich.
+            you!"
+        icy: "&cDas Wasser gefriert dir in deinem Eimer."
+        soldering-iron: "&cDas Eisen ist wie ein Bügeleisen, halt es nicht zu lange fest."
+        strong-current: "&cDie Strömung kracht gegen dich und deine Muskeln weinen vor Schmerz"
+        sweating: "&cSchweiß rinnt dir die Stirn herunter, es ist viel zu heiß für Kleidung."
+        the-shivers: "&cDas Wasser ist so kalt, dass es dich fast umbringt. Verlass es schnell."
+        warming-stew: "&aDer köstliche Eintopf macht deine Wunden ein wenig erträglicher..."
+        wet-mud: "&eDer Schlamm klebt dir am Schuh und macht dich langsamer..."
+        wind-in-your-boots: "&aDu spürst einen Windstoß in deinen Stiefeln und rast vorwärts!"
+    on-remove:
+        feels-good: "&eWährend du die Welt hinter dir lässt, lässt auch die stärkende Strahlung der Sonne nach..."
+        fluffy-coat: "&cOhne Rüstung spürt dein Körper die Kälte kann ihr nicht länger widerstehen..."
+        primitive-heating: "&eDein Körper wird nicht mehr gewärmt und sein Widerstand lässt nach..."
+        revitalized:
+            "&eWährend das Tageslicht nicht mehr auf deinen Körper fällt, lässt auch dessen &6wiederbelebende
+            &Energie nach..."
+        strong-current: "&aDie Strömung lässt von dir ab..."
+        sweating: "&aDie Luft wird kühler und du wischst dir den Schweiß von der Stirn."
+command:
+    effects-list-title: "&7Für das Wetter &e%weather%, &7gibt es folgende Effekte:"
+    effects-list-element: "&6&l%effect%: &7%description%"
+    season-info:
+        - "%season-color%Es ist gerade %season%"
+        - "&7Das Wetter ist &2%weather%"
+        - "&eHeute ist Tag %day% von %max-days%"
+    season-info-footer:
+        "&7To see the effects of this weather, use the command &e/seasons
+        effects"
+    list-help:
+        - "&7You can currently list: %options%"
+        - "&7Usage: &e/seasons list <option>"
+    list-error: "&cThere are no lists of that type available!"
+    permission-denied: "&cYou do not have permission to do that!"
+    all-effects-disabled: "&cThe server administrator has disabled all effects!"
+    barren-world:
+        "&cThis world is barren and full of darkness... There are no seasons
+        here."
+    force-day: "&7Time shatters before you and now it is &bDay %day%"
+    force-weather:
+        "&7The skies grow silent and with a great rumble, the weather is
+        now %weather%"
+    force-season: "&7The air around you changes mystically and becomes %season%"
+misc:
+    prefix: "&e&lSeasons&7∙ &r"
+    catastrophic-alert: "&c&lCATASTROPHIC WEATHER ALERT - Take care to plan your day"
+version: 3.0

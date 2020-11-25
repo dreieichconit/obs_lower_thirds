@@ -1,0 +1,180 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="initial-scale=1.0" />
+		<title>Quiz</title>
+		<link rel="stylesheet" type="text/css" href="css/styles_quiz.css" />
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+			integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+			crossorigin="anonymous"
+		/>
+		<style>
+			@font-face {
+				font-family: charlemagne;
+				src: url(../graphics/fonts/charlemagne.otf);
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<div class="iconwrapper"></div>
+			<div class="pointwrapper">
+				<div class="ptPad">
+					<div
+						class="ptDisplay dropshadow-inactive inactive"
+						id="elf"
+					>
+						<div class="titlewrapper left">
+							<div class="teamtitle">Elfen</div>
+						</div>
+						<div class="pointsubwrapper">
+							<div class="points" id="points_elfs">0</div>
+						</div>
+					</div>
+				</div>
+				<div class="ptpad">
+					<div class="ptDisplay dropshadow-inactive inactive">
+						<div class="titlewrapper center">
+							<div class="teamtitle">Frage</div>
+						</div>
+						<div class="pointsubwrapper">
+							<div class="points" id="points_question">0</div>
+						</div>
+					</div>
+				</div>
+				<div class="ptpad">
+					<div
+						class="ptDisplay dropshadow-inactive inactive"
+						id="dwarf"
+					>
+						<div class="titlewrapper right">
+							<div class="teamtitle">Zwerge</div>
+						</div>
+						<div class="pointsubwrapper">
+							<div class="points" id="points_dwarfs">0</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="bottomthird">
+				<div class="multiplewrapper">
+					<div class="multipad">
+						<div
+							class="questiondisplay inactive dropshadow-inactive"
+						>
+							<div id="frage" class="question">Frage</div>
+						</div>
+						<div class="bottomwrap">
+							<div id="multiplechoice" class="answerlist">
+								<div class="answer inactive" id="a">
+									<div style="padding-right: 1rem">A)</div>
+									<div id="antwort_a">Antwort A</div>
+								</div>
+								<div class="answer inactive" id="b">
+									<div style="padding-right: 1rem">B)</div>
+									<div id="antwort_b">Antwort B</div>
+								</div>
+								<div class="answer inactive" id="c">
+									<div style="padding-right: 1rem">C)</div>
+									<div id="antwort_c">Antwort C</div>
+								</div>
+								<div class="answer inactive" id="d">
+									<div style="padding-right: 1rem">D)</div>
+									<div id="antwort_d">Antwort D</div>
+								</div>
+							</div>
+							<div id="guess" class="guesswrapper">
+								<div class="ptPad">
+									<div
+										class="ptDisplay dropshadow-inactive inactive"
+										id="elfguess"
+									>
+										<div class="titlewrapper left">
+											<div class="teamtitle">
+												Schätzung Elfen
+											</div>
+										</div>
+										<div class="pointsubwrapper">
+											<div class="points" id="guess_elfs">
+												0
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="ptpad">
+									<div
+										class="ptDisplay dropshadow-inactive inactive"
+										id="correctamount"
+									>
+										<div class="titlewrapper center">
+											<div class="teamtitle">
+												Richtige Antwort
+											</div>
+										</div>
+										<div class="pointsubwrapper">
+											<div
+												class="points"
+												id="guess_question"
+											>
+												0
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="ptpad">
+									<div
+										class="ptDisplay dropshadow-inactive inactive"
+										id="dwarfguess"
+									>
+										<div class="titlewrapper right">
+											<div class="teamtitle">
+												Schätzung Zwerge
+											</div>
+										</div>
+										<div class="pointsubwrapper">
+											<div
+												class="points"
+												id="guess_dwarfs"
+											>
+												0
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script
+			src="https://code.jquery.com/jquery-3.5.1.js"
+			integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+			crossorigin="anonymous"
+		></script>
+
+		<script type="" src="js/quiz.js"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+			integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+			crossorigin="anonymous"
+		></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.5/socket.io.min.js"></script>
+
+		<script src="../websocket-server.js"></script>
+
+		<script src="js/eventhandler_quiz.js"></script>
+		<script src="js/socket_quiz.js"></script>
+	</body>
+</html>

@@ -1,0 +1,117 @@
+#body {
+	background-color: rgba(0, 0, 0, 0);
+}
+
+#background {
+	z-index: -999;
+	position: fixed;
+	top: 1000;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.bandtext {
+	position: fixed;
+	top: 0;
+	left: 0;
+	font-family: charlemagne;
+	color: #ddd;
+}
+
+#bandtext {
+	z-index: 1000;
+}
+
+#bandtextshadow {
+	z-index: 0;
+}
+
+#character {
+	position: fixed;
+	top: 1000;
+	z-index: -9999;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.char {
+	position: absolute;
+}
+
+.dwarf {
+	position: absolute;
+	top: 65vh;
+	left: -5vw;
+	height: 40vh;
+	width: 40vw;
+	opacity: 0;
+}
+
+.elf {
+	position: absolute;
+	top: 59vh;
+	left: -10vw;
+	height: 43vh;
+	width: 43vw;
+	opacity: 0;
+}
+
+.neutral {
+	position: absolute;
+	top: 65vh;
+	left: -5vw;
+	height: 30vh;
+	width: 30vw;
+	opacity: 0;
+}
+
+.charimg {
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+}
+
+.bandtext {
+	display: flex;
+	flex-direction: column;
+	max-height: 100%;
+	overflow: hidden;
+	justify-content: space-around;
+	align-items: flex-end;
+	width: 99%;
+}
+
+.boxbox {
+	position: fixed;
+	top: 83vh;
+	left: 3vw;
+	right: 3vw;
+	bottom: 5.9vh;
+	transform: rotate(-1.3deg);
+}
+
+.title {
+	height: 7vh;
+	max-height: 7vh;
+	font-size: 50;
+	overflow: hidden;
+}
+
+.subtitle {
+	color: lightblue;
+	font-size: 30;
+	overflow: hidden;
+}
+
+.dropshadow {
+	color: rgba(0, 0, 0, 0.9);
+	filter: blur(2px);
+	transform: translate(2px, 2px);
+}

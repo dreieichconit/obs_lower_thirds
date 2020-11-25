@@ -1,0 +1,26 @@
+{
+  "name": "obs-lower-thirds-websocket-server",
+  "version": "1.0.0",
+  "description": "Websocket-Server for the data-tranmission between editor and display browser",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/der-kai-t/obs_lower_thirds.git"
+  },
+  "author": "Der-Kai-T, Demolite",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/der-kai-t/obs_lower_thirds/issues"
+  },
+  "homepage": "https://github.com/der-kai-t/obs_lower_thirds#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "http.request": "^1.1.0",
+    "socket.io": "^2.3.0",
+    "twitch-js": "^1.2.17",
+    "twitter": "^1.7.1"
+  }
+}

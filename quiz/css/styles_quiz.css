@@ -1,0 +1,214 @@
+:root {
+	--points: rgba(200, 200, 200, 0.8);
+	--question: rgba(134, 134, 134, 0.8);
+}
+
+body {
+	background-color: transparent !important;
+	color: black !important;
+	font-size: 18pt !important;
+}
+
+.selected {
+	color: darkred;
+}
+
+.richtig {
+	color: green;
+}
+
+.falsch {
+	color: orangered;
+}
+
+.wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw !important;
+	height: 100vh !important;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.pointwrapper {
+	width: 100%;
+	height: 11vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.ptdisplay {
+	width: 20vw;
+	height: 100%;
+	background-color: var(--points);
+	opacity: 20;
+	border-radius: 1rem;
+}
+
+.titlewrapper {
+	width: 100%;
+	height: 40%;
+	display: flex;
+	align-items: flex-start;
+}
+
+.left {
+	justify-content: flex-start;
+}
+
+.center {
+	justify-content: center;
+}
+
+.right {
+	justify-content: flex-end;
+}
+
+.pointsubwrapper {
+	width: 100%;
+	height: 40%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
+}
+
+.teamtitle {
+	padding-top: 0.1rem;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	font-family: Charlemagne;
+	color: #000;
+	font-size: 1.5vw;
+}
+
+.points {
+	font-family: Charlemagne;
+	color: #000;
+	font-size: 2vw;
+	margin-bottom: -1rem;
+}
+
+.ptpad {
+	height: 100%;
+	padding: 1rem;
+}
+
+.bottomthird {
+	width: 100%;
+	height: 30vh;
+}
+
+.multiplewrapper {
+	width: 100%;
+	height: 100%;
+}
+
+.multipad {
+	width: 100%;
+	height: 100%;
+	padding: 1rem;
+}
+
+.bottomwrap {
+	height: 100%;
+	width: 100%;
+}
+
+.answerlist {
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-evenly;
+	bottom: 2vh;
+	height: 15vh;
+}
+
+#multiplechoice {
+	opacity: 0;
+}
+
+#guess {
+	opacity: 0;
+}
+
+.guesswrapper {
+	position: absolute;
+	bottom: 0.5vh;
+	left: 0.5vh;
+	height: 16.5vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-right: 0.5vw;
+}
+
+.questiondisplay {
+	width: 100%;
+	height: 40%;
+	background-color: var(--question);
+	opacity: 20;
+	border-radius: 1rem;
+}
+
+.question {
+	width: 100%;
+	height: 100%;
+	font-family: Charlemagne;
+	font-size: 2rem;
+	padding: 0.5rem;
+}
+
+.answer {
+	width: 48vw;
+	height: 40%;
+	background-color: rgba(200, 200, 200, 0.8);
+	border-radius: 1rem;
+	padding: 0.5rem;
+	margin-top: 1rem;
+	font-family: Charlemagne;
+	display: flex;
+	flex-direction: row;
+}
+
+.debug {
+	border: 1px dashed red;
+}
+
+.active-elf {
+	border: 2px solid rgba(255, 38, 0, 1);
+}
+
+.active-dwarf {
+	border: 2px solid rgba(0, 174, 255, 1);
+}
+
+.active-lock {
+	border: 2px solid rgb(0, 255, 106);
+}
+
+.inactive {
+	border: 2px solid #888;
+}
+
+.dropshadow-inactive {
+	filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.2));
+}
+
+.dropshadow-active-elf {
+	filter: drop-shadow(5px 5px 5px rgba(255, 38, 0, 0.7));
+}
+
+.dropshadow-active-dwarf {
+	filter: drop-shadow(5px 5px 5px rgba(0, 174, 255, 0.7));
+}
+
+.dropshadow-lock {
+	filter: drop-shadow(5px 5px 5px rgba(0, 255, 106, 0.7));
+}

@@ -1,0 +1,156 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="editor.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Coda&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Screen for Red</title>
+	</head>
+	<body onload="onload_getProg()">
+		<div class="wrapper">
+			<div class="left split">
+				<div class="lefttop space fill">
+					<div class="timerbox space">
+						<div class="timer">
+							<div id="currenttime" class="time">
+							</div>
+						</div>
+					</div>
+					<div class="timerbox space">
+						<div class="splitwrapper nooverflow">
+							<div class="subbox half split nooverflow current">
+								<div class="smalltitle">
+									<div><u>Laufendes Programm </u></div>
+									<div>
+										<div id="nowtitle" class="texttitle">
+											Robert Corvus
+										</div>
+										<div id="nowdata" class="texttext">
+											Hallo, mein Name ist Robert Corvus. Heute erzähle ich euch
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="timer half">
+								<div id="elapsedtime" class="time timeokay">
+									00:00:00
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="timerbox">
+						<div class="splitwrapper nooverflow">
+							<div class="subbox half split nooverflow next">
+								<div class="smalltitle">
+									<div><u>Kommendes Programm </u></div>
+									<div>
+										<div id="nexttitle" class="texttitle">
+											Robert Corvus
+										</div>
+										<div id="nextdata" class="texttext">
+											Hallo, mein Name ist immer noch Robert Corvus. Heute erzähle ich euch weiterhin
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="half splitwrapper">
+								<div class="commitbox">
+									<button class="commit dropshadow" onClick="master_go()">GO</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="lefttop fill">
+					<div class="tablewrapper">
+						<div class="tablepadding">
+							<div class="smallertitle"><u>Bauchbinden</u> (Anklicken zum Einblenden)
+								</div>
+							<div
+								id="binden"
+								class="text subbox2 wrap dropshadow"
+							></div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+			<div class="right">
+				<div class="lefttop fill space">
+					<div class="tablewrapper">
+						<div class="tablepadding">
+							<div class="smallertitle">
+								Fragen
+								<a href="#" onClick="get_questions()">Update</a>
+							</div>
+							<div class="text subbox2 dropshadow" id="Fragenliste">
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+				<div class="lefttop fill">
+					<div class="tablewrapper">
+						<div class="topwrapper nooverflow">
+							<div class="tablepadding">
+								<div class="smallertitle">
+									Kommentare
+								</div>
+								<div class="text subbox3 dropshadow" id="kommentarliste">
+
+								</div>
+							</div>
+						</div>
+
+						<div class="bottomwrapper">
+							<div class="formleft">
+								<div class="textform dropshadow">
+									<textarea name="" id="commenttext" class="textinput"></textarea>
+								</div>
+							</div>
+							<div class="formright">
+								<div class="sendbutton">
+									<button class="sendcomment dropshadow" onClick="addComment()">SENDEN</button>
+
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+		<script
+			src="https://code.jquery.com/jquery-3.5.1.js"
+			integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+			crossorigin="anonymous"
+		></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.5/socket.io.min.js"></script>
+		<script
+			src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"
+			integrity="sha256-0YPKAwZP7Mp3ALMRVB2i8GXeEndvCq3eSl/WsAl1Ryk="
+			crossorigin="anonymous"
+		></script>
+
+		<script src="../websocket-server.js"></script>
+		<script src="eventhandler.js"></script>
+		<script src="scripts/twitch.js"></script>
+		<script src="../display/clock.js"></script>
+		<script src="token.js"></script>
+		<script src="socket_2.js"></script>
+	</body>
+</html>
